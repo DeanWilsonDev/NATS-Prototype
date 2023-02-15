@@ -51,7 +51,7 @@ class Program
         }
         
         Console.WriteLine();
-        Console.WriteLine("DOne. Press any key to continue...");
+        Console.WriteLine("Done. Press any key to continue...");
         Console.ReadKey(true);
         Clear();
       }
@@ -76,7 +76,7 @@ class Program
     Console.WriteLine("Request/Response (explicit) demo");
     Console.WriteLine("================================");
 
-    for (int i = 1; 1 <= _messageCount; i++)
+    for (int i = 1; i <= _messageCount; i++)
     {
       string replySubject = $"_INBOX.{Guid.NewGuid():N}";
       ISyncSubscription subscription = _connection.SubscribeSync(replySubject);
